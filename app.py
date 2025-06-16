@@ -4,7 +4,7 @@ import pandas as pd
 import plotly as px
 import plotly.express as px
 
-df = pd.read_csv('vehicles_us.csv')
+df = pd.read_csv('D:/TripleTen/Projects/Sprint4projects/4-4WebApps/vehicles_us.csv')
 
 
 # Set page configuration
