@@ -5,7 +5,7 @@ import plotly as px
 import plotly.express as px
 
 df = pd.read_csv('D:/TripleTen/Projects/Sprint4projects/4-4WebApps/vehicles_us.csv')
-
+df.info()
 
 # Set page configuration
 st.set_page_config(
@@ -17,7 +17,7 @@ st.set_page_config(
 @st.cache_data  # Cache the data for better performance
 def load_data():
     # Load the dataset
-    df = pd.read_csv('vehicles_us.csv')
+    df = pd.read_csv('D:/TripleTen/Projects/Sprint4projects/4-4WebApps/vehicles_us.csv')
     
     # Clean the data (using your clean_data function)
     df = clean_data(df)
