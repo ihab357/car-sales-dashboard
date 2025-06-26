@@ -52,7 +52,7 @@ def main():
         min_year, max_year,
         (min_year, max_year)
     )
-    
+    #
     # Filter data based on selections
     filtered_df = df[
         (df['model_year'] >= year_range[0]) & 
@@ -94,7 +94,7 @@ def main():
             x='odometer',
             y='price',
             color='type',
-            trendline="lowess" if show_trend else None,
+            # trendline="lowess" if show_trend else None,
             title='Price vs Mileage by Vehicle Type'
         )
         st.plotly_chart(fig2, use_container_width=True)
